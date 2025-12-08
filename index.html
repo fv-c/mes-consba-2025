@@ -1,164 +1,421 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <title>Slides-Revealjs-Template</title>
-        <meta name="description" content="Slides-Revealjs-Template" />
-        <meta name="author" content="Name Surname" />
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <meta name="mobile-web-app-capable" content="yes" />
-        <meta
-            name="apple-mobile-web-app-status-bar-style"
-            content="black-translucent"
-        />
+    <title>mes-consba-2025</title>
+    <meta name="description" content="Slides-Revealjs-Template" />
+    <meta name="author" content="Name Surname" />
 
-        <link rel="stylesheet" href="dist/reset.css" />
-        <link rel="stylesheet" href="dist/reveal.css" />
-        <link rel="stylesheet" href="dist/theme/consba-custom.css" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
-        <!-- Theme used for syntax highlighted code -->
-        <link rel="stylesheet" href="plugin/highlight/monokai.css" />
-    </head>
+    <link rel="stylesheet" href="dist/reset.css" />
+    <link rel="stylesheet" href="dist/reveal.css" />
+    <link rel="stylesheet" href="dist/theme/consba-custom.css" />
 
-    <body>
-        <!-- nav -->
+    <!-- Theme used for syntax highlighted code -->
+    <link rel="stylesheet" href="plugin/highlight/monokai.css" />
+</head>
 
-        <div class="nav-wrapper" id="nav-wrapper">
-            <div class="nav-content-wrapper">
-                <div class="nav-logo-wrapper">
-                    <img src="assets/img/consba-logo.svg" alt="" />
-                </div>
-                <div class="nav-info-wrapper">
-                    <p>Name Surname</p>
-                    <div class="nav-title">Title: Subtitle</div>
-                    <p class="nav-description">Description</p>
-                </div>
-                <div class="nav-clock-wrapper" id="nav-clock-wrapper">
-                    <p class="nav-clock-hour" id="nav-clock-hour"></p>
-                    <p class="nav-clock-date" id="nav-clock-date"></p>
-                </div>
+<body>
+    <!-- nav -->
+
+    <div class="nav-wrapper" id="nav-wrapper">
+        <div class="nav-content-wrapper">
+            <div class="nav-logo-wrapper">
+                <img src="assets/img/consba-logo.svg" alt="" />
+            </div>
+            <div class="nav-info-wrapper">
+                <p>Francesco Vitucci</p>
+                <div class="nav-title">Roughness e ricorrenza</div>
+                <p class="nav-description">La roughness come parametro per analizzare ricorrenze musicali, collegando
+                    strutture simboliche e spettrali percettivamente rilevanti.</p>
+            </div>
+            <div class="nav-clock-wrapper" id="nav-clock-wrapper">
+                <p class="nav-clock-hour" id="nav-clock-hour"></p>
+                <p class="nav-clock-date" id="nav-clock-date"></p>
             </div>
         </div>
+    </div>
 
-        <!-- slides -->
+    <!-- slides -->
 
-        <div class="reveal">
-            <div class="slides">
-                <!-- Fancy templates -->
+    <div class="reveal">
+        <div class="slides">
+            <!-- Fancy templates -->
 
-                <!-- firstSlide template -->
-                <section
-                    data-state="start"
-                    data-transition="fade-out"
-                    class="firstSlide"
-                >
-                    <div class="squareUR"></div>
-                    <div class="slide-title">
-                        <div class="slide-title-info">
-                            <h3>Author(s)</h3>
-                            <h1>Title</h1>
-                            <h2>Subtitle</h2>
-                            <h4>Year</h4>
-                        </div>
-                        <p class="slide-title-hl"></p>
-                        <div class="slide-title-logo-wrapper">
-                            <img src="assets/img/consba-logo.svg" alt="" />
-                        </div>
+            <!-- firstSlide template -->
+            <section data-state="start" data-transition="fade-out" class="firstSlide">
+                <div class="squareUR"></div>
+                <div class="slide-title">
+                    <div class="slide-title-info">
+                        <h3>Francesco Vitucci</h3>
+                        <h1>Parametri di ricorrenza musicale:<br>il caso della <em>roughness</em></h1>
+                        <!-- <h2>Subtitle</h2> -->
+                        <h4>2025</h4>
                     </div>
-                    <div class="squareDL"></div>
-                </section>
+                    <p class="slide-title-hl"></p>
+                    <div class="slide-title-logo-wrapper">
+                        <img src="assets/img/consba-logo.svg" alt="" />
+                    </div>
+                </div>
+                <div class="squareDL"></div>
+            </section>
 
-                <!-- secondSlide template -->
-                <section data-transition="fade-in fade-out" class="secondSlide">
-                    <div class="secondSlide-qr" style="margin: 0">
-                        <img
-                            style="
+            <!-- secondSlide template -->
+            <section data-transition="fade-in fade-out" class="secondSlide">
+                <div class="secondSlide-qr" style="margin: 0px">
+                    <img style="
                                 width: 35%;
                                 border: 2px solid black;
                                 border-radius: 20px;
-                            "
-                            src="assets/img/qr-example.svg"
-                            alt=""
-                        />
-                    </div>
-                    <div class="secondSlide-url">
-                        <p
-                            style="
+                            " src="assets/img/qrcode.svg" alt="" />
+                </div>
+                <div class="secondSlide-url">
+                    <p style="
                                 font-family: monospace;
                                 font-size: 20pt;
                                 line-height: 0em;
-                            "
-                        >
-                            https://username.github.io/repository
-                        </p>
+                            ">
+                        https://fv-c.github.io/mes-consba-2025
+                    </p>
+                </div>
+            </section>
+
+            <section class="headerSlide">
+                <section class="sectionHeaderSlide">
+                    <h2>Punto di partenza: la ricorrenza</h2>
+                    <div class="downArrow bounce">
+                        <img width="40" height="40" alt=""
+                            src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjwhRE9DVFlQRSBzdmcgIFBVQkxJQyAnLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4nICAnaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkJz48c3ZnIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDMyIDMyIiBoZWlnaHQ9IjMycHgiIGlkPSLQodC70L7QuV8xIiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCAzMiAzMiIgd2lkdGg9IjMycHgiIHhtbDpzcGFjZT0icHJlc2VydmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPjxwYXRoIGQ9Ik0yNC4yODUsMTEuMjg0TDE2LDE5LjU3MWwtOC4yODUtOC4yODhjLTAuMzk1LTAuMzk1LTEuMDM0LTAuMzk1LTEuNDI5LDAgIGMtMC4zOTQsMC4zOTUtMC4zOTQsMS4wMzUsMCwxLjQzbDguOTk5LDkuMDAybDAsMGwwLDBjMC4zOTQsMC4zOTUsMS4wMzQsMC4zOTUsMS40MjgsMGw4Ljk5OS05LjAwMiAgYzAuMzk0LTAuMzk1LDAuMzk0LTEuMDM2LDAtMS40MzFDMjUuMzE5LDEwLjg4OSwyNC42NzksMTAuODg5LDI0LjI4NSwxMS4yODR6IiBmaWxsPSIjMTIxMzEzIiBpZD0iRXhwYW5kX01vcmUiLz48Zy8+PGcvPjxnLz48Zy8+PGcvPjxnLz48L3N2Zz4=" />
                     </div>
                 </section>
 
-                <!-- imgLtextR template -->
-                <section class="imgLtextR">
-                    <div class="slide-title">
-                        <h3>imgLtextR template</h3>
-                        <h4>Subtitle</h4>
-                    </div>
-                    <div class="slide-content">
-                        <div class="imgL-wrapper">
-                            <div>
-                                <img src="assets/img/example.jpg" alt="Image" />
-                            </div>
-                        </div>
-                        <div class="textR-wrapper">
-                            <div>
-                                <p>Text</p>
-                                <p>Text</p>
-                                <p>Text</p>
-                            </div>
-                        </div>
+                <section>
+                    <p>Il concetto di <strong>ricorrenza</strong> come oggetto centrale della prassi compositiva, dalla
+                        tradizione sino alle frontiere computazionali.</p>
+                </section>
+
+                <section>
+                    <p>Ricorrenze osservabili a diversi livelli:</p>
+                    <ul>
+                        <li>pattern melodici</li>
+                        <li>figure ritmiche</li>
+                        <li>configurazioni armoniche e timbriche</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <p><strong style="color: #0061a5; margin-right: 30px;">Ipotesi</strong>La ricorrenza è
+                        <strong>misurabile</strong> tramite parametri quantitativi
+                    </p>
+                </section>
+
+            </section>
+
+            <section>
+                <section class="sectionHeaderSlide">
+                    <h2>La roughness</h2>
+                    <div class="downArrow bounce">
+                        <img width="40" height="40" alt=""
+                            src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjwhRE9DVFlQRSBzdmcgIFBVQkxJQyAnLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4nICAnaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkJz48c3ZnIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDMyIDMyIiBoZWlnaHQ9IjMycHgiIGlkPSLQodC70L7QuV8xIiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCAzMiAzMiIgd2lkdGg9IjMycHgiIHhtbDpzcGFjZT0icHJlc2VydmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPjxwYXRoIGQ9Ik0yNC4yODUsMTEuMjg0TDE2LDE5LjU3MWwtOC4yODUtOC4yODhjLTAuMzk1LTAuMzk1LTEuMDM0LTAuMzk1LTEuNDI5LDAgIGMtMC4zOTQsMC4zOTUtMC4zOTQsMS4wMzUsMCwxLjQzbDguOTk5LDkuMDAybDAsMGwwLDBjMC4zOTQsMC4zOTUsMS4wMzQsMC4zOTUsMS40MjgsMGw4Ljk5OS05LjAwMiAgYzAuMzk0LTAuMzk1LDAuMzk0LTEuMDM2LDAtMS40MzFDMjUuMzE5LDEwLjg4OSwyNC42NzksMTAuODg5LDI0LjI4NSwxMS4yODR6IiBmaWxsPSIjMTIxMzEzIiBpZD0iRXhwYW5kX01vcmUiLz48Zy8+PGcvPjxnLz48Zy8+PGcvPjxnLz48L3N2Zz4=" />
                     </div>
                 </section>
 
-                <!-- imgRtextL template -->
-                <section class="imgRtextL">
-                    <div class="slide-title">
-                        <h3>imgRtextL template</h3>
-                        <h4>Subtitle</h4>
-                    </div>
-                    <div class="slide-content">
-                        <div class="textL-wrapper">
-                            <div>
-                                <p>Text</p>
-                                <p>Text</p>
-                                <p>Text</p>
-                            </div>
-                        </div>
-                        <div class="imgR-wrapper">
-                            <div>
-                                <img src="assets/img/example.jpg" alt="Image" />
-                            </div>
-                        </div>
-                    </div>
+                <section>
+                    <h3>Una definzione</h3>
+                    <p>Misura della dissonanza percepita mediante l’ascolto di un evento sonoro, avente un determinato
+                        contenuto spettrale</p>
                 </section>
 
-                <!-- markdown slide area -->
-                <section data-markdown>
-                    <textarea data-template>
+                <section>
+                    <ul>
+                        <li>Percezione di <strong>“asprezza”</strong> del suono</li>
+                        <li>Massima quando:
+                            <ul>
+                                <li>due parziali sono <strong>abbastanza vicini</strong> da interagire</li>
+                                <li>ma non così vicini da fondersi in un unico tono</li>
+                            </ul>
+                        </li>
+                        <li>Legata ai concetti di:
+                            <ul>
+                                <li><strong>banda critica</strong></li>
+                                <li><strong>mascheramento</strong> e densità spettrale locale</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h3>Sethares (1993): timbro, scala e consonanza locale</h3>
+                    <ul>
+                        <li>Articolo chiave: <em>“Local Consonance and the Relationship between Timbre and Scale”</em>.
+                        </li>
+                        <li>Idea centrale:
+                            <ul>
+                                <li>la consonanza/dissonanza dipende dallo <strong>spettro</strong>, cioè dalla
+                                    disposizione
+                                    dei parziali</li>
+                                <li>dato uno spettro, si può calcolare la <strong>roughness</strong>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </section>
+
+                <section>
+                    Risultati:
+                    <ul>
+                        <li>si può costruire una <strong>curva di dissonanza</strong> in funzione
+                            dell’intervallo
+                        </li>
+                    </ul>
+                </section>
+
+                <section>
+                    <ul>
+                        <li>si possono progettare <strong>scale “intonate” al timbro</strong>, minimizzando la
+                            roughness</li>
+                    </ul>
+                </section>
+
+            </section>
+
+            <section>
+                <h2>Un modello intuitivo</h2>
+                <ul>
+                    <li>Consideriamo due sinusoidi di frequenza \( f_1 \) e \( f_2 \):</li>
+                    <ul>
+                        <li>se \( |f_1 - f_2| \) è molto piccolo → quasi un tono solo, roughness bassa</li>
+                        <li>se \( |f_1 - f_2| \) è “intermedio” → battimenti rapidi, roughness alta</li>
+                        <li>se \( |f_1 - f_2| \) è grande → percepiti come due toni separati, roughness di nuovo bassa
+                        </li>
+                    </ul>
+                    <li>I modelli di roughness formalizzano proprio questa curva:
+                        <ul>
+                            <li>una <strong>funzione</strong> che associa a \( |f_1 - f_2| \) un valore di “asprezza”
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Dal modello alla misura</h2>
+                <ul>
+                    <li>Dato uno spettro con parziali \( f_i \) e ampiezze \( a_i \):</li>
+                    <ul>
+                        <li>si considera ogni coppia di parziali \( (i, j) \)</li>
+                        <li>si calcola il contributo di roughness \( d(f_i, f_j, a_i, a_j) \)</li>
+                    </ul>
+                    <li>La roughness complessiva è una <strong>somma dei contributi di tutte le coppie</strong>:
+                        <p style="font-size: 80%;">
+                            \( R = \sum_{i<j} d(f_i, f_j, a_i, a_j) \) </p>
+                    </li>
+                    <li>Questa struttura è importante perché:
+                        <ul>
+                            <li>può essere usata sia su <strong>dati simbolici</strong> (note, intervalli, PCS)</li>
+                            <li>sia su <strong>dati spettrali</strong> (parziali da un segnale audio)</li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Roughness simbolica</h2>
+                <ul>
+                    <li>Punto di partenza: una rappresentazione <strong>astratta</strong>:
+                        <ul>
+                            <li>pitch-class set</li>
+                            <li>accordi, strutture intervallari</li>
+                        </ul>
+                    </li>
+                    <li>Procedura tipica:
+                        <ul>
+                            <li>associare a ogni nota un <strong>fondamentale</strong> e uno <strong>spettro
+                                    ideale</strong> (ad es. armonico)</li>
+                            <li>generare tutti i parziali teorici del PCS</li>
+                            <li>applicare il modello di roughness (tipo Sethares) a questi parziali</li>
+                        </ul>
+                    </li>
+                    <li>Risultato:
+                        <ul>
+                            <li>la roughness diventa una proprietà <strong>della struttura simbolica</strong></li>
+                            <li>misuriamo quanto un certo <strong>insieme di altezze</strong> tende a produrre asprezza,
+                                a prescindere dall’esecuzione specifica</li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Roughness spettrale</h2>
+                <ul>
+                    <li>Punto di partenza: il <strong>segnale audio</strong>.</li>
+                    <li>Procedura tipica:
+                        <ul>
+                            <li>analisi in tempo-frequenza (STFT o simili)</li>
+                            <li>individuazione di <strong>picchi spettrali</strong> in ogni frame</li>
+                            <li>calcolo della roughness per ogni coppia di picchi → serie temporale di roughness</li>
+                        </ul>
+                    </li>
+                    <li>Questo permette di:
+                        <ul>
+                            <li>seguire l’evoluzione della roughness nel tempo</li>
+                            <li>associare a ogni <strong>momento sonoro</strong> un valore di “asprezza” misurata sul
+                                segnale reale</li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Simbolico e spettrale: perché sono assimilabili</h2>
+                <ul>
+                    <li>In entrambi i casi:
+                        <ul>
+                            <li>abbiamo un insieme di <strong>frequenze</strong> e <strong>ampiezze</strong></li>
+                            <li>applichiamo la <strong>stessa logica di calcolo</strong> (somma di contributi di coppie)
+                            </li>
+                        </ul>
+                    </li>
+                    <li><strong>Roughness simbolica</strong>:
+                        <ul>
+                            <li>usa uno spettro <strong>modellato</strong> (ideale, controllato)</li>
+                            <li>è utile per confrontare <strong>strutture astratte</strong> (PCS, accordi, famiglie di
+                                insiemi)</li>
+                        </ul>
+                    </li>
+                    <li><strong>Roughness spettrale</strong>:
+                        <ul>
+                            <li>usa lo spettro <strong>misurato</strong> del segnale</li>
+                            <li>è sensibile a orchestrazione, articolazione, spazio, registri</li>
+                        </ul>
+                    </li>
+                    <li>Se il modello è coerente, le due misure possono essere <strong>messe in relazione</strong> e
+                        confrontate.</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Roughness come parametro di ricorrenza</h2>
+                <ul>
+                    <li>Possiamo considerare la roughness come una <strong>traccia temporale</strong>:
+                        <ul>
+                            <li>una curva che sale e scende nel tempo</li>
+                        </ul>
+                    </li>
+                    <li>Su questa curva possiamo cercare:
+                        <ul>
+                            <li><strong>pattern ricorrenti</strong> (forme d’onda simili)</li>
+                            <li><strong>configurazioni tipiche</strong> di una sezione, di un motivo, di un “gesto”
+                                orchestrale</li>
+                        </ul>
+                    </li>
+                    <li>In parallelo, sul piano simbolico:
+                        <ul>
+                            <li>possiamo analizzare la roughness di <strong>famiglie di insiemi</strong>,
+                                trasformazioni, varianti</li>
+                            <li>e studiare come queste ricorrenze <strong>si riflettono nel segnale</strong></li>
+                        </ul>
+                    </li>
+                    <li>Obiettivo: usare la roughness come <strong>ponte</strong> tra:
+                        <ul>
+                            <li>ricorrenza strutturale (partitura / dati)</li>
+                            <li>ricorrenza percettiva (ciò che “sentiamo” come simile)</li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Conclusione (provvisoria)</h2>
+                <ul>
+                    <li>La roughness non è solo una misura di “quanto il suono è ruvido”.</li>
+                    <li>È uno strumento per:
+                        <ul>
+                            <li>mettere in dialogo <strong>teoria degli insiemi</strong> e <strong>analisi
+                                    spettrale</strong></li>
+                            <li>descrivere ricorrenze che riguardano il <strong>profilo energetico</strong> del suono
+                            </li>
+                        </ul>
+                    </li>
+                    <li>Passi successivi:
+                        <ul>
+                            <li>costruire <strong>mappe di ricorrenza</strong> basate sulla roughness</li>
+                            <li>confrontare strutture simboliche e realizzazioni audio</li>
+                            <li>integrare la roughness con altri parametri (altezza, ritmo, spazio)</li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+
+
+            <!-- imgLtextR template -->
+            <section class="imgLtextR">
+                <div class="slide-title">
+                    <h3>imgLtextR template</h3>
+                    <h4>Subtitle</h4>
+                </div>
+                <div class="slide-content">
+                    <div class="imgL-wrapper">
+                        <div>
+                            <img src="assets/img/example.jpg" alt="Image" />
+                        </div>
+                    </div>
+                    <div class="textR-wrapper">
+                        <div>
+                            <p>Text</p>
+                            <p>Text</p>
+                            <p>Text</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- imgRtextL template -->
+            <section class="imgRtextL">
+                <div class="slide-title">
+                    <h3>imgRtextL template</h3>
+                    <h4>Subtitle</h4>
+                </div>
+                <div class="slide-content">
+                    <div class="textL-wrapper">
+                        <div>
+                            <p>Text</p>
+                            <p>Text</p>
+                            <p>Text</p>
+                        </div>
+                    </div>
+                    <div class="imgR-wrapper">
+                        <div>
+                            <img src="assets/img/example.jpg" alt="Image" />
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- markdown slide area -->
+            <section data-markdown>
+                <textarea data-template>
 						## Markdown (1)
 						Slide written in markdown
 						---
 						## Markdown  (2)
 						Another slide written in markdown
-					</textarea
-                    >
-                </section>
-                <section>
-                    <h2 class="r-fit-text">BIG</h2>
-                </section>
+					</textarea>
+            </section>
+            <section>
+                <h2 class="r-fit-text">BIG</h2>
+            </section>
 
-                <!-- Mermaid usage -->
-                <section>
-                    <div class="mermaid">
-                        <pre>
+            <!-- Mermaid usage -->
+            <section>
+                <div class="mermaid">
+                    <pre>
 							mindmap
 								root((mindmap))
 									Origins
@@ -176,147 +433,160 @@
 										Pen and paper
 										Mermaid
 						</pre>
+                </div>
+            </section>
+
+            <!-- bibliography section -->
+
+            <section class="headerSlide">
+                <section class="sectionHeaderSlide">
+                    <h2>Bibliography</h2>
+                    <div class="downArrow bounce">
+                        <img width="40" height="40" alt=""
+                            src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjwhRE9DVFlQRSBzdmcgIFBVQkxJQyAnLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4nICAnaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkJz48c3ZnIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDMyIDMyIiBoZWlnaHQ9IjMycHgiIGlkPSLQodC70L7QuV8xIiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCAzMiAzMiIgd2lkdGg9IjMycHgiIHhtbDpzcGFjZT0icHJlc2VydmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPjxwYXRoIGQ9Ik0yNC4yODUsMTEuMjg0TDE2LDE5LjU3MWwtOC4yODUtOC4yODhjLTAuMzk1LTAuMzk1LTEuMDM0LTAuMzk1LTEuNDI5LDAgIGMtMC4zOTQsMC4zOTUtMC4zOTQsMS4wMzUsMCwxLjQzbDguOTk5LDkuMDAybDAsMGwwLDBjMC4zOTQsMC4zOTUsMS4wMzQsMC4zOTUsMS40MjgsMGw4Ljk5OS05LjAwMiAgYzAuMzk0LTAuMzk1LDAuMzk0LTEuMDM2LDAtMS40MzFDMjUuMzE5LDEwLjg4OSwyNC42NzksMTAuODg5LDI0LjI4NSwxMS4yODR6IiBmaWxsPSIjMTIxMzEzIiBpZD0iRXhwYW5kX01vcmUiLz48Zy8+PGcvPjxnLz48Zy8+PGcvPjxnLz48L3N2Zz4=" />
                     </div>
                 </section>
-
-                <!-- bibliography section -->
-
-                <section class="headerSlide">
-                    <section class="sectionHeaderSlide">
-                        <h2>Bibliography</h2>
-                        <div class="downArrow bounce">
-                            <img width="40" height="40" alt=""
-                                src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjwhRE9DVFlQRSBzdmcgIFBVQkxJQyAnLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4nICAnaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkJz48c3ZnIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDMyIDMyIiBoZWlnaHQ9IjMycHgiIGlkPSLQodC70L7QuV8xIiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCAzMiAzMiIgd2lkdGg9IjMycHgiIHhtbDpzcGFjZT0icHJlc2VydmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPjxwYXRoIGQ9Ik0yNC4yODUsMTEuMjg0TDE2LDE5LjU3MWwtOC4yODUtOC4yODhjLTAuMzk1LTAuMzk1LTEuMDM0LTAuMzk1LTEuNDI5LDAgIGMtMC4zOTQsMC4zOTUtMC4zOTQsMS4wMzUsMCwxLjQzbDguOTk5LDkuMDAybDAsMGwwLDBjMC4zOTQsMC4zOTUsMS4wMzQsMC4zOTUsMS40MjgsMGw4Ljk5OS05LjAwMiAgYzAuMzk0LTAuMzk1LDAuMzk0LTEuMDM2LDAtMS40MzFDMjUuMzE5LDEwLjg4OSwyNC42NzksMTAuODg5LDI0LjI4NSwxMS4yODR6IiBmaWxsPSIjMTIxMzEzIiBpZD0iRXhwYW5kX01vcmUiLz48Zy8+PGcvPjxnLz48Zy8+PGcvPjxnLz48L3N2Zz4=" />
-                        </div>
-                    </section>
-                    <!-- modify the file assets/bibliography.bib -->
-                    <section class="bibContent">
-                        <div class="bibWrapper">
-                            <div class="bibtex_template bibItem">
-                                <div class="if author">
-                                    <span class="if year">
-                                        <span class="year"></span>
-                                    </span>
-                                    <span class="author" conjunction=" and"><span class="last"></span> <span class="first"></span></span>
-                                </div>
-                                <div style="margin-left: 10px; margin-bottom:5px; margin-top:5px; font-style: italic;">
-                                    <span class="title"></span>
-                                </div>
-                                <div class="if journal" style="margin-left: 5px; margin-bottom:5px;">
-                                    «<span class="journal"></span>»
-                                </div>
-                                <div class="if publisher" style="margin-left: 5px; font-size: 0.8em; margin-bottom: 5px;">
-                                    <span class="publisher"></span>
-                                </div>
-                                <div class="if isbn" style="margin-left: 10px; font-weight: 300;font-size: 0.8em;">
-                                    <b>ISBN</b>: <span class="isbn"></span>
-                                </div>
-                                <div class="if issn" style="margin-left: 10px; font-weight: 300;font-size: 0.8em;">
-                                    <b>ISSN</b>: <span class="isbn"></span>
-                                </div>
-                                <span class="if url" style="margin-left: 10px; margin-top: 10px;">
-                                    <a class="url" style="font-size:0.75em" target="_blank">(view online)</a>
+                <!-- modify the file assets/bibliography.bib -->
+                <section class="bibContent">
+                    <div class="bibWrapper">
+                        <div class="bibtex_template bibItem">
+                            <div class="if author">
+                                <span class="if year">
+                                    <span class="year"></span>
                                 </span>
-                                <div class="if note" style="margin-left: 10px; font-weight: 300;font-size: 0.8em; font-style: italic;">
-                                    <span class="note"></span>
-                                </div>
+                                <span class="author" conjunction=" and"><span class="last"></span> <span
+                                        class="first"></span></span>
                             </div>
-                            <div id="bibtex_display"></div>
-                        </div>
-                    </section>
-                </section>
-
-                <!-- endSlide template -->
-                <section
-                    data-state="start"
-                    data-background-color="rgb(0 97 165)"
-                    data-transition-speed="slow"
-                    data-transition="fade-in"
-                    class="endSlide" id="thankyou">
-                    <div class="thankyou-wrapper">
-                        <h2>THANK YOU</h2>
-                        <p class="slide-title-hl"></p>
-                    </div>
-                    <div class="authorship-wrapper">
-
-                        <div class="author-wrapper">
-                            <div class="author-left">
-                                <div class="author-img"><img src="assets/img/auth-sample-1.jpg" alt=""></div>
-                                <div class="author-info">
-                                    <p class="author-name">Name Surname</p>
-                                    <p class="author-curr">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus urna orci, bibendum at sem ac, blandit malesuada tortor. Quisque nec felis in quam ullamcorper laoreet at dapibus ipsum. Curabitur in sapien vitae libero iaculis blandit quis in nunc. Proin gravida, nulla sit amet pulvinar fringilla, dolor odio fringilla metus, eget porta quam erat at augue. Vivamus fermentum finibus odio. Proin quis nibh sed lacus ornare rhoncus. Praesent nisl nunc, interdum quis molestie vel, tempor et velit. Etiam interdum, sapien id faucibus egestas, eros massa ornare ipsum, in tempus purus nibh sit amet sem.
-                                    </p>
-                                    <div class="contacts">
-                                        <p>https://www.example.com/</p>
-                                        <p>Contact 2</p>
-                                        <p>Contact 3</p>
-                                        <!-- add more contact -->
-                                    </div>
-                                </div>
+                            <div style="margin-left: 10px; margin-bottom:5px; margin-top:5px; font-style: italic;">
+                                <span class="title"></span>
+                            </div>
+                            <div class="if journal" style="margin-left: 5px; margin-bottom:5px;">
+                                «<span class="journal"></span>»
+                            </div>
+                            <div class="if publisher" style="margin-left: 5px; font-size: 0.8em; margin-bottom: 5px;">
+                                <span class="publisher"></span>
+                            </div>
+                            <div class="if isbn" style="margin-left: 10px; font-weight: 300;font-size: 0.8em;">
+                                <b>ISBN</b>: <span class="isbn"></span>
+                            </div>
+                            <div class="if issn" style="margin-left: 10px; font-weight: 300;font-size: 0.8em;">
+                                <b>ISSN</b>: <span class="isbn"></span>
+                            </div>
+                            <span class="if url" style="margin-left: 10px; margin-top: 10px;">
+                                <a class="url" style="font-size:0.75em" target="_blank">(view online)</a>
+                            </span>
+                            <div class="if note"
+                                style="margin-left: 10px; font-weight: 300;font-size: 0.8em; font-style: italic;">
+                                <span class="note"></span>
                             </div>
                         </div>
-
-                        <div class="author-wrapper">
-                            <div class="author-right">
-                                <div class="author-info">
-                                    <p class="author-name">Name Surname</p>
-                                    <p class="author-curr">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus urna orci, bibendum at sem ac, blandit malesuada tortor. Quisque nec felis in quam ullamcorper laoreet at dapibus ipsum. Curabitur in sapien vitae libero iaculis blandit quis in nunc. Proin gravida, nulla sit amet pulvinar fringilla, dolor odio fringilla metus, eget porta quam erat at augue. Vivamus fermentum finibus odio. Proin quis nibh sed lacus ornare rhoncus. Praesent nisl nunc, interdum quis molestie vel, tempor et velit. Etiam interdum, sapien id faucibus egestas, eros massa ornare ipsum, in tempus purus nibh sit amet sem.
-                                    </p>
-                                    <div class="contacts">
-                                        <p>https://www.example.com/</p>
-                                        <p>Contact 2</p>
-                                        <p>Contact 3</p>
-                                        <!-- add more contact -->
-                                    </div>
-                                </div>
-                                <div class="author-img"><img src="assets/img/auth-sample-2.jpg" alt=""></div>
-                            </div>
-                        </div>
-
+                        <div id="bibtex_display"></div>
                     </div>
                 </section>
-            </div>
+            </section>
+
+            <!-- endSlide template -->
+            <section data-state="start" data-background-color="rgb(0 97 165)" data-transition-speed="slow"
+                data-transition="fade-in" class="endSlide" id="thankyou">
+                <div class="thankyou-wrapper">
+                    <h2>THANK YOU</h2>
+                    <p class="slide-title-hl"></p>
+                </div>
+                <div class="authorship-wrapper">
+
+                    <div class="author-wrapper">
+                        <div class="author-left">
+                            <div class="author-img"><img src="assets/img/auth-sample-1.jpg" alt=""></div>
+                            <div class="author-info">
+                                <p class="author-name">Name Surname</p>
+                                <p class="author-curr">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus urna orci, bibendum
+                                    at sem ac, blandit malesuada tortor. Quisque nec felis in quam ullamcorper laoreet
+                                    at dapibus ipsum. Curabitur in sapien vitae libero iaculis blandit quis in nunc.
+                                    Proin gravida, nulla sit amet pulvinar fringilla, dolor odio fringilla metus, eget
+                                    porta quam erat at augue. Vivamus fermentum finibus odio. Proin quis nibh sed lacus
+                                    ornare rhoncus. Praesent nisl nunc, interdum quis molestie vel, tempor et velit.
+                                    Etiam interdum, sapien id faucibus egestas, eros massa ornare ipsum, in tempus purus
+                                    nibh sit amet sem.
+                                </p>
+                                <div class="contacts">
+                                    <p>https://www.example.com/</p>
+                                    <p>Contact 2</p>
+                                    <p>Contact 3</p>
+                                    <!-- add more contact -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="author-wrapper">
+                        <div class="author-right">
+                            <div class="author-info">
+                                <p class="author-name">Name Surname</p>
+                                <p class="author-curr">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus urna orci, bibendum
+                                    at sem ac, blandit malesuada tortor. Quisque nec felis in quam ullamcorper laoreet
+                                    at dapibus ipsum. Curabitur in sapien vitae libero iaculis blandit quis in nunc.
+                                    Proin gravida, nulla sit amet pulvinar fringilla, dolor odio fringilla metus, eget
+                                    porta quam erat at augue. Vivamus fermentum finibus odio. Proin quis nibh sed lacus
+                                    ornare rhoncus. Praesent nisl nunc, interdum quis molestie vel, tempor et velit.
+                                    Etiam interdum, sapien id faucibus egestas, eros massa ornare ipsum, in tempus purus
+                                    nibh sit amet sem.
+                                </p>
+                                <div class="contacts">
+                                    <p>https://www.example.com/</p>
+                                    <p>Contact 2</p>
+                                    <p>Contact 3</p>
+                                    <!-- add more contact -->
+                                </div>
+                            </div>
+                            <div class="author-img"><img src="assets/img/auth-sample-2.jpg" alt=""></div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
         </div>
+    </div>
 
-        <!-- reveal.js plugins -->
+    <!-- reveal.js plugins -->
 
-        <script src="dist/reveal.js"></script>
-        <script src="plugin/notes/notes.js"></script>
-        <script src="plugin/markdown/markdown.js"></script>
-        <script src="plugin/highlight/highlight.js"></script>
-        <script src="plugin/zoom/zoom.js"></script>
-        <script src="plugin/mermaid/mermaid.js"></script>
-        <script>
-            // More info about initialization & config:
-            // - https://revealjs.com/initialization/
-            // - https://revealjs.com/config/
-            Reveal.initialize({
-                hash: true,
-                width: 1280,
-                height: 720,
-                controls: true,
-                progress: true,
-                center: true,
-                hash: true,
-                scrollActivationWidth: null,
-                slideNumber: "h.v",
-                // Learn about plugins: https://revealjs.com/plugins/
-                plugins: [
-                    RevealMarkdown,
-                    RevealHighlight,
-                    RevealNotes,
-                    RevealZoom,
-                    RevealMermaid,
-                ],
-            });
-        </script>
+    <script src="dist/reveal.js"></script>
+    <script src="plugin/notes/notes.js"></script>
+    <script src="plugin/markdown/markdown.js"></script>
+    <script src="plugin/highlight/highlight.js"></script>
+    <script src="plugin/zoom/zoom.js"></script>
+    <script src="plugin/mermaid/mermaid.js"></script>
+    <script>
+        // More info about initialization & config:
+        // - https://revealjs.com/initialization/
+        // - https://revealjs.com/config/
+        Reveal.initialize({
+            hash: true,
+            width: 1280,
+            height: 720,
+            controls: true,
+            progress: true,
+            center: true,
+            hash: true,
+            scrollActivationWidth: null,
+            slideNumber: "h.v",
+            // Learn about plugins: https://revealjs.com/plugins/
+            plugins: [
+                RevealMarkdown,
+                RevealHighlight,
+                RevealNotes,
+                RevealZoom,
+                RevealMermaid,
+            ],
+        });
+    </script>
 
-        <!-- clock -->
-        <script src="assets/js/clock.js"></script>
-        <!-- bibtexjs -->
-        <script type="text/javascript" src="assets/js/bibtex_js.min.js"></script>
-        <bibtex src="assets/bibliography.bib"></bibtex>
-    </body>
+    <!-- clock -->
+    <script src="assets/js/clock.js"></script>
+    <!-- bibtexjs -->
+    <script type="text/javascript" src="assets/js/bibtex_js.min.js"></script>
+    <bibtex src="assets/bibliography.bib"></bibtex>
+</body>
+
 </html>

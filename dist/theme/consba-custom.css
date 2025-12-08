@@ -387,7 +387,7 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
   align-content: center;
 }
 .reveal .slides .firstSlide .slide-title .slide-title-info h1 {
-  font-size: 1.5em;
+  font-size: 1.25em;
 }
 .reveal .slides .firstSlide .slide-title .slide-title-info h2 {
   font-size: 0.8em;
@@ -396,7 +396,7 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
   font-size: 0.5em;
 }
 .reveal .slides .firstSlide .slide-title .slide-title-info h4 {
-  font-size: 0.3em;
+  font-size: 0.5em;
   color: #57585a;
 }
 .reveal .slides .firstSlide .slide-title .slide-title-hl {
