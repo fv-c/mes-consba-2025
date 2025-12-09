@@ -53,7 +53,7 @@
                 <div class="slide-title">
                     <div class="slide-title-info">
                         <h3>Francesco Vitucci</h3>
-                        <h1>Parametri di ricorrenza musicale:<br>il caso della <em>roughness</em></h1>
+                        <h1>Parametri di ricorrenza musicale:<br>il caso studio della <em>roughness</em></h1>
                         <!-- <h2>Subtitle</h2> -->
                         <h4>2025</h4>
                     </div>
@@ -110,7 +110,7 @@
 
                 <section>
                     <p><strong style="color: #0061a5; margin-right: 30px;">Ipotesi</strong>La ricorrenza è
-                        <strong>misurabile</strong> tramite parametri quantitativi
+                        <strong>misurabile</strong> tramite<br>una serie di parametri quantitativi
                     </p>
                 </section>
 
@@ -176,100 +176,147 @@
                 </section>
 
                 <section>
+                    <img src="assets/img/roughness-0.svg" style="max-height: 60vh;" alt="Image" />
+                </section>
+
+                <section>
+                    <h2>Un modello intuitivo</h2>
+                    <p>
+                        Consideriamo due sinusoidi di frequenza \( f_1 \) e \( f_2 \):
+                    <ul>
+                        <li>\(|f_1 - f_2|\) molto piccolo (quasi nullo) → roughness bassa</li>
+                        <li>\( |f_1 - f_2| \) “intermedio” → battimenti, poi roughness alta</li>
+                        <li>\( |f_1 - f_2| \) grande → due toni separati, roughness in diminuzione
+                        </li>
+                    </ul>
+                    </p>
+                </section>
+
+                <section>
+                    <img src="assets/img/roughness-1.svg" style="max-height: 60vh;" alt="Image" />
+                </section>
+
+                <section>
                     <ul>
                         <li>si possono progettare <strong>scale “intonate” al timbro</strong>, minimizzando la
                             roughness</li>
                     </ul>
                 </section>
 
+                <section>
+                    <img src="assets/img/roughness-2.svg" style="max-height: 60vh;" alt="Image" />
+                </section>
+
+                <section>
+                    <img src="assets/img/roughness-3.svg" style="max-height: 60vh;" alt="Image" />
+                </section>
             </section>
 
             <section>
-                <h2>Un modello intuitivo</h2>
-                <ul>
-                    <li>Consideriamo due sinusoidi di frequenza \( f_1 \) e \( f_2 \):</li>
+                <section class="sectionHeaderSlide">
+                    <h2>Misurazioni di roughness <em>simbolica</em></h2>
+                    <div class="downArrow bounce">
+                        <img width="40" height="40" alt=""
+                            src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjwhRE9DVFlQRSBzdmcgIFBVQkxJQyAnLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4nICAnaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkJz48c3ZnIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDMyIDMyIiBoZWlnaHQ9IjMycHgiIGlkPSLQodC70L7QuV8xIiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCAzMiAzMiIgd2lkdGg9IjMycHgiIHhtbDpzcGFjZT0icHJlc2VydmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPjxwYXRoIGQ9Ik0yNC4yODUsMTEuMjg0TDE2LDE5LjU3MWwtOC4yODUtOC4yODhjLTAuMzk1LTAuMzk1LTEuMDM0LTAuMzk1LTEuNDI5LDAgIGMtMC4zOTQsMC4zOTUtMC4zOTQsMS4wMzUsMCwxLjQzbDguOTk5LDkuMDAybDAsMGwwLDBjMC4zOTQsMC4zOTUsMS4wMzQsMC4zOTUsMS40MjgsMGw4Ljk5OS05LjAwMiAgYzAuMzk0LTAuMzk1LDAuMzk0LTEuMDM2LDAtMS40MzFDMjUuMzE5LDEwLjg4OSwyNC42NzksMTAuODg5LDI0LjI4NSwxMS4yODR6IiBmaWxsPSIjMTIxMzEzIiBpZD0iRXhwYW5kX01vcmUiLz48Zy8+PGcvPjxnLz48Zy8+PGcvPjxnLz48L3N2Zz4=" />
+                    </div>
+                </section>
+
+                <section>
+                    <p>Si considera una rappresentazione <strong>astratta</strong>: pitch-class set, accordi,
+                        strutture intervallari</p>
+                </section>
+
+                <section>
+                    <p>Procedura tipica:
                     <ul>
-                        <li>se \( |f_1 - f_2| \) è molto piccolo → quasi un tono solo, roughness bassa</li>
-                        <li>se \( |f_1 - f_2| \) è “intermedio” → battimenti rapidi, roughness alta</li>
-                        <li>se \( |f_1 - f_2| \) è grande → percepiti come due toni separati, roughness di nuovo bassa
-                        </li>
+                        <li>associare a ogni pitch class il relativo <strong>spettro
+                                ideale</strong></li>
                     </ul>
-                    <li>I modelli di roughness formalizzano proprio questa curva:
-                        <ul>
-                            <li>una <strong>funzione</strong> che associa a \( |f_1 - f_2| \) un valore di “asprezza”
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-            </section>
+                    </p>
+                    <img src="assets/img/spettro-armonico-0.svg" style="max-height: 40vh;" alt="Image" />
+                </section>
 
-            <section>
-                <h2>Dal modello alla misura</h2>
-                <ul>
-                    <li>Dato uno spettro con parziali \( f_i \) e ampiezze \( a_i \):</li>
+                <section>
                     <ul>
-                        <li>si considera ogni coppia di parziali \( (i, j) \)</li>
-                        <li>si calcola il contributo di roughness \( d(f_i, f_j, a_i, a_j) \)</li>
+                        <li>generare tutti i parziali simbolici del PCS</li>
                     </ul>
-                    <li>La roughness complessiva è una <strong>somma dei contributi di tutte le coppie</strong>:
-                        <p style="font-size: 80%;">
-                            \( R = \sum_{i<j} d(f_i, f_j, a_i, a_j) \) </p>
-                    </li>
-                    <li>Questa struttura è importante perché:
-                        <ul>
-                            <li>può essere usata sia su <strong>dati simbolici</strong> (note, intervalli, PCS)</li>
-                            <li>sia su <strong>dati spettrali</strong> (parziali da un segnale audio)</li>
-                        </ul>
-                    </li>
-                </ul>
+                    <img src="assets/img/spettro-armonico-1.svg" style="max-height: 50vh;" alt="Image" />
+                </section>
+
+                <section>
+                    <ul>
+                        <li>applicare il modello di misurazione roughness</li>
+                    </ul>
+                    <p> </p>
+                    <p>\( R = \sum_{i=1}^{N} \sum_{j=i+1}^{N}
+                        a_i a_j
+                        \left(
+                        e^{-3.5 \frac{|f_i - f_j|}{s(f_i,f_j)}} -
+                        e^{-5.75 \frac{|f_i - f_j|}{s(f_i,f_j)}}
+                        \right)
+                        \)</p>
+                    <p> </p>
+                    <p><em>Local consonance and the relationship between<br>timbre and scale.</em> Sethares, W. A.
+                        (1993)
+                    </p>
+                </section>
+
+                <section>
+                    <p><strong style="color: #0061a5; margin-right: 30px;">Risultato</strong>La roughness diventa una
+                        proprietà <strong>della struttura simbolica</strong></p>
+                </section>
+
             </section>
 
             <section>
-                <h2>Roughness simbolica</h2>
-                <ul>
-                    <li>Punto di partenza: una rappresentazione <strong>astratta</strong>:
-                        <ul>
-                            <li>pitch-class set</li>
-                            <li>accordi, strutture intervallari</li>
-                        </ul>
-                    </li>
-                    <li>Procedura tipica:
-                        <ul>
-                            <li>associare a ogni nota un <strong>fondamentale</strong> e uno <strong>spettro
-                                    ideale</strong> (ad es. armonico)</li>
-                            <li>generare tutti i parziali teorici del PCS</li>
-                            <li>applicare il modello di roughness (tipo Sethares) a questi parziali</li>
-                        </ul>
-                    </li>
-                    <li>Risultato:
-                        <ul>
-                            <li>la roughness diventa una proprietà <strong>della struttura simbolica</strong></li>
-                            <li>misuriamo quanto un certo <strong>insieme di altezze</strong> tende a produrre asprezza,
-                                a prescindere dall’esecuzione specifica</li>
-                        </ul>
-                    </li>
-                </ul>
-            </section>
+                <section class="sectionHeaderSlide">
+                    <h2>Misurazioni di roughness <em>spettrale</em></h2>
+                    <div class="downArrow bounce">
+                        <img width="40" height="40" alt=""
+                            src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjwhRE9DVFlQRSBzdmcgIFBVQkxJQyAnLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4nICAnaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkJz48c3ZnIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDMyIDMyIiBoZWlnaHQ9IjMycHgiIGlkPSLQodC70L7QuV8xIiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCAzMiAzMiIgd2lkdGg9IjMycHgiIHhtbDpzcGFjZT0icHJlc2VydmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPjxwYXRoIGQ9Ik0yNC4yODUsMTEuMjg0TDE2LDE5LjU3MWwtOC4yODUtOC4yODhjLTAuMzk1LTAuMzk1LTEuMDM0LTAuMzk1LTEuNDI5LDAgIGMtMC4zOTQsMC4zOTUtMC4zOTQsMS4wMzUsMCwxLjQzbDguOTk5LDkuMDAybDAsMGwwLDBjMC4zOTQsMC4zOTUsMS4wMzQsMC4zOTUsMS40MjgsMGw4Ljk5OS05LjAwMiAgYzAuMzk0LTAuMzk1LDAuMzk0LTEuMDM2LDAtMS40MzFDMjUuMzE5LDEwLjg4OSwyNC42NzksMTAuODg5LDI0LjI4NSwxMS4yODR6IiBmaWxsPSIjMTIxMzEzIiBpZD0iRXhwYW5kX01vcmUiLz48Zy8+PGcvPjxnLz48Zy8+PGcvPjxnLz48L3N2Zz4=" />
+                    </div>
+                </section>
 
-            <section>
-                <h2>Roughness spettrale</h2>
-                <ul>
-                    <li>Punto di partenza: il <strong>segnale audio</strong>.</li>
-                    <li>Procedura tipica:
-                        <ul>
-                            <li>analisi in tempo-frequenza (STFT o simili)</li>
-                            <li>individuazione di <strong>picchi spettrali</strong> in ogni frame</li>
-                            <li>calcolo della roughness per ogni coppia di picchi → serie temporale di roughness</li>
-                        </ul>
-                    </li>
-                    <li>Questo permette di:
-                        <ul>
-                            <li>seguire l’evoluzione della roughness nel tempo</li>
-                            <li>associare a ogni <strong>momento sonoro</strong> un valore di “asprezza” misurata sul
-                                segnale reale</li>
-                        </ul>
-                    </li>
-                </ul>
+                <section>
+                    <p>Rappresentazione digitale (1)</p>
+                    <img src="assets/img/audio-0.svg" style="max-height: 50vh;" alt="Image" />
+                </section>
+
+                <section>
+                    <p>Rappresentazione digitale (2)</p>
+                    <img src="assets/img/audio-1.png" style="max-height: 50vh;" alt="Image" />
+                </section>
+
+                <section>
+                    <p><strong style="color: #0061a5; margin-right: 30px;">Trasformata di Fourier (TF)</strong>
+                        decompone un segnale nel tempo nelle sue componenti frequenziali, fornendo una
+                        rappresentazione spettrale dell’energia distribuita sulle frequenze.
+                    </p>
+                </section>
+
+                <section>
+                    <p>Dopo la <strong>TF</strong>:</p>
+                    <img src="assets/img/fourier.svg" style="max-height: 50vh;" alt="Image" />
+                </section>
+
+                <section>
+                    <video controls>
+                        <source src="assets/img/anim.mov"">
+                    </video>
+                </section>
+
+                <section>
+                    Applicando la Trasformata di Fourier si possono ricavare frequenza e ampiezza delle componenti
+                    armoniche del segnale di partenza.
+                    <div>Dunque <strong>si può procedere alla misurazione di<br>roughness tempovariante</strong>.</div>
+                </section>
+
+                <section>
+                    <video controls style=" max-height: 65vh;">
+                        <source src=" assets/img/bee.mov">
+                    </video>
+                </section>
+
             </section>
 
             <section>
@@ -282,265 +329,101 @@
                             </li>
                         </ul>
                     </li>
-                    <li><strong>Roughness simbolica</strong>:
-                        <ul>
-                            <li>usa uno spettro <strong>modellato</strong> (ideale, controllato)</li>
-                            <li>è utile per confrontare <strong>strutture astratte</strong> (PCS, accordi, famiglie di
-                                insiemi)</li>
-                        </ul>
-                    </li>
-                    <li><strong>Roughness spettrale</strong>:
-                        <ul>
-                            <li>usa lo spettro <strong>misurato</strong> del segnale</li>
-                            <li>è sensibile a orchestrazione, articolazione, spazio, registri</li>
-                        </ul>
-                    </li>
-                    <li>Se il modello è coerente, le due misure possono essere <strong>messe in relazione</strong> e
-                        confrontate.</li>
                 </ul>
             </section>
 
             <section>
                 <h2>Roughness come parametro di ricorrenza</h2>
                 <ul>
-                    <li>Possiamo considerare la roughness come una <strong>traccia temporale</strong>:
-                        <ul>
-                            <li>una curva che sale e scende nel tempo</li>
-                        </ul>
+                    <li>roughness come <strong>descrittore spettrale</strong>
                     </li>
-                    <li>Su questa curva possiamo cercare:
+                    <li>Su questa curva si possono individuare:
                         <ul>
-                            <li><strong>pattern ricorrenti</strong> (forme d’onda simili)</li>
+                            <li><strong>pattern ricorrenti</strong></li>
                             <li><strong>configurazioni tipiche</strong> di una sezione, di un motivo, di un “gesto”
                                 orchestrale</li>
                         </ul>
                     </li>
-                    <li>In parallelo, sul piano simbolico:
-                        <ul>
-                            <li>possiamo analizzare la roughness di <strong>famiglie di insiemi</strong>,
-                                trasformazioni, varianti</li>
-                            <li>e studiare come queste ricorrenze <strong>si riflettono nel segnale</strong></li>
-                        </ul>
-                    </li>
-                    <li>Obiettivo: usare la roughness come <strong>ponte</strong> tra:
-                        <ul>
-                            <li>ricorrenza strutturale (partitura / dati)</li>
-                            <li>ricorrenza percettiva (ciò che “sentiamo” come simile)</li>
-                        </ul>
+                    <li>Sul piano simbolico possiamo analizzare la roughness di <strong>famiglie di insiemi</strong>,
+                        trasformazioni, varianti, e studiare come queste ricorrenze <strong>si riflettono nel
+                            segnale</strong>
                     </li>
                 </ul>
             </section>
 
             <section>
-                <h2>Conclusione (provvisoria)</h2>
+                <h3 style="color: #0061a5;">Obiettivo</h3>
+                <p>usare la roughness come <strong>ponte</strong> tra
                 <ul>
-                    <li>La roughness non è solo una misura di “quanto il suono è ruvido”.</li>
-                    <li>È uno strumento per:
-                        <ul>
-                            <li>mettere in dialogo <strong>teoria degli insiemi</strong> e <strong>analisi
-                                    spettrale</strong></li>
-                            <li>descrivere ricorrenze che riguardano il <strong>profilo energetico</strong> del suono
-                            </li>
-                        </ul>
-                    </li>
-                    <li>Passi successivi:
-                        <ul>
-                            <li>costruire <strong>mappe di ricorrenza</strong> basate sulla roughness</li>
-                            <li>confrontare strutture simboliche e realizzazioni audio</li>
-                            <li>integrare la roughness con altri parametri (altezza, ritmo, spazio)</li>
-                        </ul>
-                    </li>
+                    <li>ricorrenza strutturale (partitura / dati)</li>
+                    <li>ricorrenza percettiva (ascolto)</li>
                 </ul>
-            </section>
-
-
-            <!-- imgLtextR template -->
-            <section class="imgLtextR">
-                <div class="slide-title">
-                    <h3>imgLtextR template</h3>
-                    <h4>Subtitle</h4>
-                </div>
-                <div class="slide-content">
-                    <div class="imgL-wrapper">
-                        <div>
-                            <img src="assets/img/example.jpg" alt="Image" />
-                        </div>
-                    </div>
-                    <div class="textR-wrapper">
-                        <div>
-                            <p>Text</p>
-                            <p>Text</p>
-                            <p>Text</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- imgRtextL template -->
-            <section class="imgRtextL">
-                <div class="slide-title">
-                    <h3>imgRtextL template</h3>
-                    <h4>Subtitle</h4>
-                </div>
-                <div class="slide-content">
-                    <div class="textL-wrapper">
-                        <div>
-                            <p>Text</p>
-                            <p>Text</p>
-                            <p>Text</p>
-                        </div>
-                    </div>
-                    <div class="imgR-wrapper">
-                        <div>
-                            <img src="assets/img/example.jpg" alt="Image" />
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- markdown slide area -->
-            <section data-markdown>
-                <textarea data-template>
-						## Markdown (1)
-						Slide written in markdown
-						---
-						## Markdown  (2)
-						Another slide written in markdown
-					</textarea>
-            </section>
-            <section>
-                <h2 class="r-fit-text">BIG</h2>
-            </section>
-
-            <!-- Mermaid usage -->
-            <section>
-                <div class="mermaid">
-                    <pre>
-							mindmap
-								root((mindmap))
-									Origins
-										Long history
-										Popularisation
-											British popular psychology author Tony Buzan
-									Research
-										On effectiveness<br/>and features
-										On Automatic creation
-											Uses
-												Creative techniques
-												Strategic planning
-												Argument mapping
-									Tools
-										Pen and paper
-										Mermaid
-						</pre>
-                </div>
-            </section>
-
-            <!-- bibliography section -->
-
-            <section class="headerSlide">
-                <section class="sectionHeaderSlide">
-                    <h2>Bibliography</h2>
-                    <div class="downArrow bounce">
-                        <img width="40" height="40" alt=""
-                            src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjwhRE9DVFlQRSBzdmcgIFBVQkxJQyAnLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4nICAnaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkJz48c3ZnIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDMyIDMyIiBoZWlnaHQ9IjMycHgiIGlkPSLQodC70L7QuV8xIiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCAzMiAzMiIgd2lkdGg9IjMycHgiIHhtbDpzcGFjZT0icHJlc2VydmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPjxwYXRoIGQ9Ik0yNC4yODUsMTEuMjg0TDE2LDE5LjU3MWwtOC4yODUtOC4yODhjLTAuMzk1LTAuMzk1LTEuMDM0LTAuMzk1LTEuNDI5LDAgIGMtMC4zOTQsMC4zOTUtMC4zOTQsMS4wMzUsMCwxLjQzbDguOTk5LDkuMDAybDAsMGwwLDBjMC4zOTQsMC4zOTUsMS4wMzQsMC4zOTUsMS40MjgsMGw4Ljk5OS05LjAwMiAgYzAuMzk0LTAuMzk1LDAuMzk0LTEuMDM2LDAtMS40MzFDMjUuMzE5LDEwLjg4OSwyNC42NzksMTAuODg5LDI0LjI4NSwxMS4yODR6IiBmaWxsPSIjMTIxMzEzIiBpZD0iRXhwYW5kX01vcmUiLz48Zy8+PGcvPjxnLz48Zy8+PGcvPjxnLz48L3N2Zz4=" />
-                    </div>
-                </section>
-                <!-- modify the file assets/bibliography.bib -->
-                <section class="bibContent">
-                    <div class="bibWrapper">
-                        <div class="bibtex_template bibItem">
-                            <div class="if author">
-                                <span class="if year">
-                                    <span class="year"></span>
-                                </span>
-                                <span class="author" conjunction=" and"><span class="last"></span> <span
-                                        class="first"></span></span>
-                            </div>
-                            <div style="margin-left: 10px; margin-bottom:5px; margin-top:5px; font-style: italic;">
-                                <span class="title"></span>
-                            </div>
-                            <div class="if journal" style="margin-left: 5px; margin-bottom:5px;">
-                                «<span class="journal"></span>»
-                            </div>
-                            <div class="if publisher" style="margin-left: 5px; font-size: 0.8em; margin-bottom: 5px;">
-                                <span class="publisher"></span>
-                            </div>
-                            <div class="if isbn" style="margin-left: 10px; font-weight: 300;font-size: 0.8em;">
-                                <b>ISBN</b>: <span class="isbn"></span>
-                            </div>
-                            <div class="if issn" style="margin-left: 10px; font-weight: 300;font-size: 0.8em;">
-                                <b>ISSN</b>: <span class="isbn"></span>
-                            </div>
-                            <span class="if url" style="margin-left: 10px; margin-top: 10px;">
-                                <a class="url" style="font-size:0.75em" target="_blank">(view online)</a>
-                            </span>
-                            <div class="if note"
-                                style="margin-left: 10px; font-weight: 300;font-size: 0.8em; font-style: italic;">
-                                <span class="note"></span>
-                            </div>
-                        </div>
-                        <div id="bibtex_display"></div>
-                    </div>
-                </section>
+                <p>Desumere logiche da <strong>iniettare</strong> in strutture computazionali.</p>
+                </p>
             </section>
 
             <!-- endSlide template -->
             <section data-state="start" data-background-color="rgb(0 97 165)" data-transition-speed="slow"
                 data-transition="fade-in" class="endSlide" id="thankyou">
                 <div class="thankyou-wrapper">
-                    <h2>THANK YOU</h2>
-                    <p class="slide-title-hl"></p>
+                    <h2>GRAZIE</h2>
+                    <h3 style="line-height: 10px; color: white; font-size: 1.125em; margin-bottom: 20px;">PER
+                        L'ATTENZIONE!</h3>
+                    <!-- <p class="slide-title-hl"></p> -->
                 </div>
                 <div class="authorship-wrapper">
 
                     <div class="author-wrapper">
                         <div class="author-left">
-                            <div class="author-img"><img src="assets/img/auth-sample-1.jpg" alt=""></div>
+                            <div class="author-img"><img src="assets/img/francescovitucci-icon.jpg" alt=""></div>
                             <div class="author-info">
-                                <p class="author-name">Name Surname</p>
+                                <p class="author-name">Francesco Vitucci</p>
                                 <p class="author-curr">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus urna orci, bibendum
-                                    at sem ac, blandit malesuada tortor. Quisque nec felis in quam ullamcorper laoreet
-                                    at dapibus ipsum. Curabitur in sapien vitae libero iaculis blandit quis in nunc.
-                                    Proin gravida, nulla sit amet pulvinar fringilla, dolor odio fringilla metus, eget
-                                    porta quam erat at augue. Vivamus fermentum finibus odio. Proin quis nibh sed lacus
-                                    ornare rhoncus. Praesent nisl nunc, interdum quis molestie vel, tempor et velit.
-                                    Etiam interdum, sapien id faucibus egestas, eros massa ornare ipsum, in tempus purus
-                                    nibh sit amet sem.
+                                    He graduated in Composition, Technological Musical Disciplines and Electronic Music
+                                    at the “N. Piccinni” Conservatory in Bari. He specialized at the Conservatory of
+                                    Italian Switzerland and, subsequently, at the National Academy of Santa Cecilia
+                                    (Rome), completing all courses with full marks and honors and obtaining appreciation
+                                    from his teachers (Biagio Putignano, Nadir Vassena, Michelangelo Lupone, Ivan
+                                    Fedele, Francesco Scagliola).
+                                </p>
+                                <p class="author-curr">
+                                    Ordinary member of S.I.M.C. (Italian Society of Contemporary Music), his works are
+                                    performed in concerts and contemporary music festivals, in Italy and abroad, and
+                                    have been positively evaluated in various national and international composition
+                                    competitions: First Prize in the International Composition Competition “2 Agosto” –
+                                    XXVII edition (2021); Jurypreis and Publikumspreis, at the “Junges
+                                    Lied-Wettbewerbes” Competition in Zurich (2022); Grand Prix in the 4th International
+                                    Composer Competition “New Music Generation 2022”, organized by the Kazakh National
+                                    University of Arts (2022); finalist in the “Luciano Berio” International Composition
+                                    Competition (2023); selected piece (A deep breath) in International Computer Music
+                                    Conference 2024, College of Music, Hanyang University - Seoul, South Korea.<br>
+                                    For the year 2022 he received the Goffredo Petrassi Scholarship Award from the
+                                    President of the Italian Republic, as the best student composer of the National
+                                    Academy of Santa Cecilia.
+                                </p>
+                                <p class="author-curr">
+                                    He has received several commissions for acoustic and mixed music: MiBAC, Orchestra
+                                    Magna Grecia, Orchestra Sinfonica Metropolitana di Bari, ArteScienza, CRM (Centro
+                                    Ricerche Musicali di Roma), Musinfo (Saint-Étienne - France), Creative Dialogue
+                                    France, Coro Sol-O Canto, Trio Lumen, Caelium, etc.
+                                </p>
+                                <p class="author-curr">
+                                    Since November 2020 he teaches Music Analysis in a seminar for students of the
+                                    Master of Arts in Orchestral Conducting, at the Conservatory of Italian Switzerland.
+                                    Between 2023 and 2024 he was Composition teacher at the “G. Rossini” in Pesaro.
+                                </p>
+                                <p class="author-curr">
+                                    Currently, at the “N. Piccinni” Conservatory of Bari, he is a PhD student in
+                                    “Computational electroacoustic music composition, generative algorithmic models and
+                                    computational complexity”.
                                 </p>
                                 <div class="contacts">
-                                    <p>https://www.example.com/</p>
-                                    <p>Contact 2</p>
-                                    <p>Contact 3</p>
+                                    <a href="https://www.francescovitucci.com/" target="_blank"
+                                        style="color: white; font-size: 0.4em; margin-top: 0px;">https://www.francescovitucci.com/</a>
+                                    <p>info@francescovitucci.com</p>
                                     <!-- add more contact -->
                                 </div>
                             </div>
-                        </div>
-                    </div>
-
-                    <div class="author-wrapper">
-                        <div class="author-right">
-                            <div class="author-info">
-                                <p class="author-name">Name Surname</p>
-                                <p class="author-curr">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus urna orci, bibendum
-                                    at sem ac, blandit malesuada tortor. Quisque nec felis in quam ullamcorper laoreet
-                                    at dapibus ipsum. Curabitur in sapien vitae libero iaculis blandit quis in nunc.
-                                    Proin gravida, nulla sit amet pulvinar fringilla, dolor odio fringilla metus, eget
-                                    porta quam erat at augue. Vivamus fermentum finibus odio. Proin quis nibh sed lacus
-                                    ornare rhoncus. Praesent nisl nunc, interdum quis molestie vel, tempor et velit.
-                                    Etiam interdum, sapien id faucibus egestas, eros massa ornare ipsum, in tempus purus
-                                    nibh sit amet sem.
-                                </p>
-                                <div class="contacts">
-                                    <p>https://www.example.com/</p>
-                                    <p>Contact 2</p>
-                                    <p>Contact 3</p>
-                                    <!-- add more contact -->
-                                </div>
-                            </div>
-                            <div class="author-img"><img src="assets/img/auth-sample-2.jpg" alt=""></div>
                         </div>
                     </div>
 
@@ -557,6 +440,8 @@
     <script src="plugin/highlight/highlight.js"></script>
     <script src="plugin/zoom/zoom.js"></script>
     <script src="plugin/mermaid/mermaid.js"></script>
+    <script src="plugin/math/math.js"></script>
+
     <script>
         // More info about initialization & config:
         // - https://revealjs.com/initialization/
@@ -578,6 +463,7 @@
                 RevealNotes,
                 RevealZoom,
                 RevealMermaid,
+                RevealMath.KaTeX
             ],
         });
     </script>

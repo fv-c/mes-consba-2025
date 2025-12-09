@@ -1,0 +1,175 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 14.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      6362,        167]
+NotebookOptionsPosition[      5547,        144]
+NotebookOutlinePosition[      5943,        160]
+CellTagsIndexPosition[      5900,        157]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"SetDirectory", "[", 
+   RowBox[{"NotebookDirectory", "[", "]"}], "]"}], ";"}]], "Input",
+ InitializationCell->True,
+ CellChangeTimes->{{3.974257478433857*^9, 3.9742574864339933`*^9}},
+ CellLabel->
+  "In[1292]:=",ExpressionUUID->"c20a03b7-70ac-47fe-9ebf-f35b2895b7b6"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{
+   RowBox[{"note", "=", 
+    RowBox[{"{", "60", "}"}]}], ";"}], 
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{"Export", "[", 
+  RowBox[{"\"\<spettro-armonico-0.svg\>\"", ",", 
+   RowBox[{"ListPlot", "[", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{
+      RowBox[{
+       RowBox[{"generateSetharesStandardHarmonicTimbre", "[", 
+        RowBox[{
+         RowBox[{"midiToHertz", "[", 
+          RowBox[{"{", "#", "}"}], "]"}], ",", "20"}], "]"}], "&"}], "/@", 
+      "note"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"ImageSize", "->", "1000"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"AspectRatio", "->", 
+      RowBox[{"1", "/", "2.5"}]}], ",", "\[IndentingNewLine]", 
+     RowBox[{"Filling", "->", "Axis"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"PlotLabel", "->", 
+      RowBox[{"Style", "[", 
+       RowBox[{
+        RowBox[{
+        "\"\<Spettro armonico (20 parziali). Riferimento \>\"", "<>", 
+         RowBox[{"If", "[", 
+          RowBox[{
+           RowBox[{
+            RowBox[{"Length", "@", "note"}], ">", "1"}], ",", "\"\<note \>\"",
+            ",", "\"\<nota \>\""}], "]"}], "<>", "\"\<MIDI: \>\"", "<>", 
+         RowBox[{"StringRiffle", "[", 
+          RowBox[{
+           RowBox[{"ToString", "/@", "note"}], ",", "\"\<,\>\""}], "]"}]}], 
+        ",", 
+        RowBox[{"FontFamily", "->", "\"\<Menlo\>\""}], ",", "24", ",", "Bold",
+         ",", "Black"}], "]"}]}], ",", "\[IndentingNewLine]", 
+     RowBox[{"PlotTheme", "->", "\"\<Business\>\""}], ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{"PlotRange", "->", "All"}]}], "]"}]}], "\[IndentingNewLine]", 
+  "]"}]}], "Input",
+ CellChangeTimes->{{3.974260757978204*^9, 3.9742608735937366`*^9}, {
+  3.974260908444098*^9, 3.9742609087946577`*^9}, {3.974260944755403*^9, 
+  3.974260972299467*^9}, {3.9742611917519007`*^9, 3.974261249985669*^9}, {
+  3.974261305788519*^9, 3.9742614874762163`*^9}},
+ CellLabel->
+  "In[1493]:=",ExpressionUUID->"19d8cf49-c322-45df-a143-8df165794b83"],
+
+Cell[BoxData["\<\"spettro-armonico-0.svg\"\>"], "Output",
+ CellChangeTimes->{{3.974260766370584*^9, 3.9742608738708773`*^9}, {
+  3.97426094537969*^9, 3.974260973134704*^9}, {3.974261192236746*^9, 
+  3.9742612342391033`*^9}, {3.9742613363869762`*^9, 3.9742614878669043`*^9}},
+ CellLabel->
+  "Out[1494]=",ExpressionUUID->"4b60a36a-5571-448a-b738-216bfff9cd92"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{
+   RowBox[{"note", "=", 
+    RowBox[{"{", 
+     RowBox[{"60", ",", "64", ",", "67"}], "}"}]}], ";"}], 
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{"Export", "[", 
+  RowBox[{"\"\<spettro-armonico-1.svg\>\"", ",", 
+   RowBox[{"ListPlot", "[", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{
+      RowBox[{
+       RowBox[{"generateSetharesStandardHarmonicTimbre", "[", 
+        RowBox[{
+         RowBox[{"midiToHertz", "[", 
+          RowBox[{"{", "#", "}"}], "]"}], ",", "20"}], "]"}], "&"}], "/@", 
+      "note"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"ImageSize", "->", "1000"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"AspectRatio", "->", 
+      RowBox[{"1", "/", "2.5"}]}], ",", "\[IndentingNewLine]", 
+     RowBox[{"Filling", "->", "Axis"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"PlotLabel", "->", 
+      RowBox[{"Style", "[", 
+       RowBox[{
+        RowBox[{
+        "\"\<Spettro armonico (20 parziali). Riferimento \>\"", "<>", 
+         RowBox[{"If", "[", 
+          RowBox[{
+           RowBox[{
+            RowBox[{"Length", "@", "note"}], ">", "1"}], ",", "\"\<note \>\"",
+            ",", "\"\<nota \>\""}], "]"}], "<>", "\"\<MIDI: \>\"", "<>", 
+         RowBox[{"StringRiffle", "[", 
+          RowBox[{
+           RowBox[{"ToString", "/@", "note"}], ",", "\"\<,\>\""}], "]"}]}], 
+        ",", 
+        RowBox[{"FontFamily", "->", "\"\<Menlo\>\""}], ",", "24", ",", "Bold",
+         ",", "Black"}], "]"}]}], ",", "\[IndentingNewLine]", 
+     RowBox[{"PlotTheme", "->", "\"\<Business\>\""}], ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{"PlotRange", "->", "All"}]}], "]"}]}], "\[IndentingNewLine]", 
+  "]"}]}], "Input",
+ CellChangeTimes->{{3.974260757978204*^9, 3.9742608735937366`*^9}, {
+  3.974260908444098*^9, 3.9742609087946577`*^9}, {3.974260944755403*^9, 
+  3.974260972299467*^9}, {3.9742611917519007`*^9, 3.974261249985669*^9}, {
+  3.974261305788519*^9, 3.974261500581501*^9}},
+ CellLabel->
+  "In[1495]:=",ExpressionUUID->"9ce9bd31-2ed5-41bb-8140-c88aa795ec95"],
+
+Cell[BoxData["\<\"spettro-armonico-1.svg\"\>"], "Output",
+ CellChangeTimes->{3.9742615012123938`*^9},
+ CellLabel->
+  "Out[1496]=",ExpressionUUID->"4d856057-e0c8-434f-b137-55755c335cba"]
+}, Open  ]]
+},
+WindowSize->{1343, 873},
+WindowMargins->{{4, Automatic}, {Automatic, 4}},
+FrontEndVersion->"14.0 for Mac OS X ARM (64-bit) (December 12, 2023)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"c05eef6c-7f23-4f3f-a78f-046490454b49"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 302, 7, 46, "Input",ExpressionUUID->"c20a03b7-70ac-47fe-9ebf-f35b2895b7b6",
+ InitializationCell->True],
+Cell[CellGroupData[{
+Cell[885, 31, 2012, 46, 262, "Input",ExpressionUUID->"19d8cf49-c322-45df-a143-8df165794b83"],
+Cell[2900, 79, 358, 5, 48, "Output",ExpressionUUID->"4b60a36a-5571-448a-b738-216bfff9cd92"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[3295, 89, 2048, 47, 262, "Input",ExpressionUUID->"9ce9bd31-2ed5-41bb-8140-c88aa795ec95"],
+Cell[5346, 138, 185, 3, 48, "Output",ExpressionUUID->"4d856057-e0c8-434f-b137-55755c335cba"]
+}, Open  ]]
+}
+]
+*)
+
