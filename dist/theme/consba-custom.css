@@ -756,14 +756,14 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
   flex-direction: column;
   top: 30vh !important;
   text-align: left;
-  padding-top: 100px;
 }
 .reveal .headerSlide .bibWrapper .bibItem {
-  font-size: 0.25em;
-  margin-bottom: 20px;
+  font-size: 0.33em;
+  margin-bottom: 2vh;
   border-left: 3px solid #0061a5;
+  border-bottom: 1px solid #0061a5;
   padding-left: 10px;
-  width: 45%;
+  width: 60%;
 }
 .reveal .headerSlide .bibWrapper .bibItem .url {
   color: #0061a5;

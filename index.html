@@ -362,6 +362,59 @@
                 </p>
             </section>
 
+            <!-- bibliography section -->
+
+            <section class="headerSlide">
+                <section class="sectionHeaderSlide">
+                    <h2>Bibliografia (breve)</h2>
+                    <div class="downArrow bounce">
+                        <img width="40" height="40" alt=""
+                            src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjwhRE9DVFlQRSBzdmcgIFBVQkxJQyAnLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4nICAnaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkJz48c3ZnIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDMyIDMyIiBoZWlnaHQ9IjMycHgiIGlkPSLQodC70L7QuV8xIiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCAzMiAzMiIgd2lkdGg9IjMycHgiIHhtbDpzcGFjZT0icHJlc2VydmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPjxwYXRoIGQ9Ik0yNC4yODUsMTEuMjg0TDE2LDE5LjU3MWwtOC4yODUtOC4yODhjLTAuMzk1LTAuMzk1LTEuMDM0LTAuMzk1LTEuNDI5LDAgIGMtMC4zOTQsMC4zOTUtMC4zOTQsMS4wMzUsMCwxLjQzbDguOTk5LDkuMDAybDAsMGwwLDBjMC4zOTQsMC4zOTUsMS4wMzQsMC4zOTUsMS40MjgsMGw4Ljk5OS05LjAwMiAgYzAuMzk0LTAuMzk1LDAuMzk0LTEuMDM2LDAtMS40MzFDMjUuMzE5LDEwLjg4OSwyNC42NzksMTAuODg5LDI0LjI4NSwxMS4yODR6IiBmaWxsPSIjMTIxMzEzIiBpZD0iRXhwYW5kX01vcmUiLz48Zy8+PGcvPjxnLz48Zy8+PGcvPjxnLz48L3N2Zz4=" />
+                    </div>
+                </section>
+                <!-- modify the file assets/bibliography.bib -->
+                <section class="bibContent">
+                    <a style="position: absolute; right: 1vh; top: 1vh; border-radius: 10px; border: 1px solid black; z-index: 10; font-size: .5em; padding: 5px; box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;"
+                        href="assets/bibliography.bib" download="bibliography.bib">Download</a>
+                    <div class="bibWrapper"
+                        style="position: sticky; overflow-y: auto; top: 0; bottom: 0; height: 50vh; border: 1px solid black; border-radius: 10px; padding: 30px; box-shadow: inset 0 0 20px lightgray;">
+
+                        <div class="bibtex_template bibItem">
+                            <div class="if author">
+                                <span class="if year">
+                                    <span class="year"></span>
+                                </span>
+                                <span class="author" conjunction=" and"><span class="last"></span> <span
+                                        class="first"></span></span>
+                            </div>
+                            <div style="margin-left: 10px; margin-bottom:5px; margin-top:5px; font-style: italic;">
+                                <span class="title"></span>
+                            </div>
+                            <div class="if journal" style="margin-left: 5px; margin-bottom:5px;">
+                                «<span class="journal"></span>»
+                            </div>
+                            <div class="if publisher" style="margin-left: 5px; font-size: 0.8em; margin-bottom: 5px;">
+                                <span class="publisher"></span>
+                            </div>
+                            <div class="if isbn" style="margin-left: 10px; font-weight: 300;font-size: 0.8em;">
+                                <b>ISBN</b>: <span class="isbn"></span>
+                            </div>
+                            <div class="if issn" style="margin-left: 10px; font-weight: 300;font-size: 0.8em;">
+                                <b>ISSN</b>: <span class="isbn"></span>
+                            </div>
+                            <span class="if url" style="margin-left: 10px; margin-top: 10px;">
+                                <a class="url" style="font-size:0.75em" target="_blank">(view online)</a>
+                            </span>
+                            <div class="if note"
+                                style="margin-left: 10px; font-weight: 300;font-size: 0.8em; font-style: italic;">
+                                <span class="note"></span>
+                            </div>
+                        </div>
+                        <div id="bibtex_display"></div>
+                    </div>
+                </section>
+            </section>
+
             <!-- endSlide template -->
             <section data-state="start" data-background-color="rgb(0 97 165)" data-transition-speed="slow"
                 data-transition="fade-in" class="endSlide" id="thankyou">
